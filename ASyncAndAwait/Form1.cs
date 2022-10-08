@@ -16,6 +16,8 @@ namespace AsyncAndAwait
         public Form1()
         {
             InitializeComponent();
+            txtProgress.Text = "";
+            txtProgress.Font = new Font("", 12);
             SubscribeToEvents();
         }
 
@@ -24,13 +26,57 @@ namespace AsyncAndAwait
             btnNormalExecute.Click += BtnNormalExecute_Click;
             btnAsyncExecute.Click += BtnAsyncExecute_Click;
             btnParallelAsyncExecute.Click += BtnParallelAsyncExecute_Click;
+            btnAsyncAndReport.Click += BtnAsyncAndReport_Click;
+        }
+
+        private async void BtnAsyncAndReport_Click(object sender, EventArgs e)
+        {
+            txtProgress.Text = "";
+            totalTime.Text = "";
+            prgbr.Value = 0;
+            Progress<ProgressData> progress = new Progress<ProgressData>();
+            progress.ProgressChanged += Progress_ProgressChanged;
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
+            var result=await RunDownloadDataAsyncAndReport(progress);
+            printResults(result);
+
+            timer.Stop();
+
+            totalTime.Text += $"Total Runtime duration is {timer.ElapsedMilliseconds} milliseconds";
+            for (int i = 0; i < 10; i++)
+            {
+            txtProgress.Text += $"Total Runtime duration is {timer.ElapsedMilliseconds} milliseconds";
+                totalTime.Text += i + Environment.NewLine;
+
+            }
+
+
+            
+
+        }
+
+        private void printResults(List<WebsiteDataModel> results)
+        {
+            txtProgress.Text = "";
+            foreach (var result in results)
+            {
+                reportWebsiteData(result);
+            }
+        }
+
+        private void Progress_ProgressChanged(object sender, ProgressData e)
+        {
+            prgbr.Value = e.PercentageCompleted;
+            printResults(e.SiteDownloaded);
         }
 
         private async void BtnParallelAsyncExecute_Click(object sender, EventArgs e)
         {
-            var timer = System.Diagnostics.Stopwatch.StartNew();
             txtProgress.Text = "";
-            txtProgress.Font = new Font("", 12);
+            prgbr.Value = 0;
+
+            var timer = System.Diagnostics.Stopwatch.StartNew();
 
             await RunDownloadDataAsyncParallel();
 
@@ -41,9 +87,10 @@ namespace AsyncAndAwait
 
         private async void  BtnAsyncExecute_Click(object sender, EventArgs e)
         {
-            var timer = System.Diagnostics.Stopwatch.StartNew();
             txtProgress.Text = "";
-            txtProgress.Font = new Font("", 12);
+            prgbr.Value = 0;
+
+            var timer = System.Diagnostics.Stopwatch.StartNew();
 
             await RunDownloadDataAsync();
 
@@ -54,9 +101,9 @@ namespace AsyncAndAwait
 
         private void BtnNormalExecute_Click(object sender, EventArgs e)
         {
-            var timer = System.Diagnostics.Stopwatch.StartNew();
             txtProgress.Text = "";
-            txtProgress.Font = new Font("", 12);
+            prgbr.Value = 0;
+            var timer = System.Diagnostics.Stopwatch.StartNew();
 
             RunDownloadData();
 
@@ -82,9 +129,25 @@ namespace AsyncAndAwait
             foreach (var website in websites)
             {
                 var websiteModel =await Task.Run(()=> downloadWebsite(website));
-
                 reportWebsiteData(websiteModel);
+
             }
+        }
+        private async Task<List<WebsiteDataModel>> RunDownloadDataAsyncAndReport(IProgress<ProgressData> Progress)
+        {
+            ProgressData progress=new ProgressData();
+            var websites = PrepareData();
+            var output = new List<WebsiteDataModel>();
+            foreach (var website in websites)
+            {
+                output.Add(await downloadWebsiteAsync(website));
+
+                progress.SiteDownloaded = output;
+                progress.PercentageCompleted = output.Count() * 100 / websites.Count();
+
+                Progress.Report(progress);  
+            }
+            return output;
         }
         private async Task RunDownloadDataAsyncParallel()
         {
@@ -129,16 +192,16 @@ namespace AsyncAndAwait
             List<string> output = new List<string>();
             output.Add("https://www.yahoo.com/");
             output.Add("https://www.google.com/");
-            output.Add("https://www.bbc.com/");
-            output.Add("https://www.w3schools.com/");
-            output.Add("https://www.tutorialspoint.com/");
-            output.Add("https://www.tesla.com/");
-            output.Add("https://www.yahoo.com/");
-            output.Add("https://www.google.com/");
-            output.Add("https://www.bbc.com/");
-            output.Add("https://www.w3schools.com/");
-            output.Add("https://www.tutorialspoint.com/");
-            output.Add("https://www.tesla.com/");
+            //output.Add("https://www.bbc.com/");
+            //output.Add("https://www.w3schools.com/");
+            //output.Add("https://www.tutorialspoint.com/");
+            //output.Add("https://www.tesla.com/");
+            //output.Add("https://www.yahoo.com/");
+            //output.Add("https://www.google.com/");
+            //output.Add("https://www.bbc.com/");
+            //output.Add("https://www.w3schools.com/");
+            //output.Add("https://www.tutorialspoint.com/");
+            //output.Add("https://www.tesla.com/");
 
             return output;
         }
