@@ -1,0 +1,11 @@
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\bin\Debug\AsyncAndAwait.exe.config
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\bin\Debug\AsyncAndAwait.exe
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\bin\Debug\AsyncAndAwait.pdb
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.csproj.AssemblyReference.cache
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.csproj.SuggestedBindingRedirects.cache
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.Form1.resources
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.Properties.Resources.resources
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.csproj.GenerateResource.cache
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.csproj.CoreCompileInputs.cache
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.exe
+D:\Hamid1\Hassanzada\Projects\C# Advanced Topics\ASyncAndAwait\obj\Debug\AsyncAndAwait.pdb
