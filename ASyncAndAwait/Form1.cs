@@ -18,6 +18,8 @@ namespace AsyncAndAwait
             InitializeComponent();
             txtProgress.Text = "";
             txtProgress.Font = new Font("", 12);
+            TotalTime.Text = "";
+            TotalTime.Font = new Font("", 12);
             SubscribeToEvents();
         }
 
@@ -32,7 +34,7 @@ namespace AsyncAndAwait
         private async void BtnAsyncAndReport_Click(object sender, EventArgs e)
         {
             txtProgress.Text = "";
-            totalTime.Text = "";
+            TotalTime.Text = "";
             prgbr.Value = 0;
             Progress<ProgressData> progress = new Progress<ProgressData>();
             progress.ProgressChanged += Progress_ProgressChanged;
@@ -43,16 +45,7 @@ namespace AsyncAndAwait
 
             timer.Stop();
 
-            totalTime.Text += $"Total Runtime duration is {timer.ElapsedMilliseconds} milliseconds";
-            for (int i = 0; i < 10; i++)
-            {
-            txtProgress.Text += $"Total Runtime duration is {timer.ElapsedMilliseconds} milliseconds";
-                totalTime.Text += i + Environment.NewLine;
-
-            }
-
-
-            
+            TotalTime.Text += $"Total Runtime duration is {timer.ElapsedMilliseconds} milliseconds";
 
         }
 
@@ -74,6 +67,8 @@ namespace AsyncAndAwait
         private async void BtnParallelAsyncExecute_Click(object sender, EventArgs e)
         {
             txtProgress.Text = "";
+            TotalTime.Text = "";
+
             prgbr.Value = 0;
 
             var timer = System.Diagnostics.Stopwatch.StartNew();
@@ -88,6 +83,8 @@ namespace AsyncAndAwait
         private async void  BtnAsyncExecute_Click(object sender, EventArgs e)
         {
             txtProgress.Text = "";
+            TotalTime.Text = "";
+
             prgbr.Value = 0;
 
             var timer = System.Diagnostics.Stopwatch.StartNew();
@@ -102,6 +99,8 @@ namespace AsyncAndAwait
         private void BtnNormalExecute_Click(object sender, EventArgs e)
         {
             txtProgress.Text = "";
+            TotalTime.Text = "";
+
             prgbr.Value = 0;
             var timer = System.Diagnostics.Stopwatch.StartNew();
 
@@ -192,16 +191,16 @@ namespace AsyncAndAwait
             List<string> output = new List<string>();
             output.Add("https://www.yahoo.com/");
             output.Add("https://www.google.com/");
-            //output.Add("https://www.bbc.com/");
-            //output.Add("https://www.w3schools.com/");
-            //output.Add("https://www.tutorialspoint.com/");
-            //output.Add("https://www.tesla.com/");
-            //output.Add("https://www.yahoo.com/");
-            //output.Add("https://www.google.com/");
-            //output.Add("https://www.bbc.com/");
-            //output.Add("https://www.w3schools.com/");
-            //output.Add("https://www.tutorialspoint.com/");
-            //output.Add("https://www.tesla.com/");
+            output.Add("https://www.bbc.com/");
+            output.Add("https://www.w3schools.com/");
+            output.Add("https://www.tutorialspoint.com/");
+            output.Add("https://www.tesla.com/");
+            output.Add("https://www.yahoo.com/");
+            output.Add("https://www.google.com/");
+            output.Add("https://www.bbc.com/");
+            output.Add("https://www.w3schools.com/");
+            output.Add("https://www.tutorialspoint.com/");
+            output.Add("https://www.tesla.com/");
 
             return output;
         }

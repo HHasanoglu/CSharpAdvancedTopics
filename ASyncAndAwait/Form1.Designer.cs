@@ -35,12 +35,12 @@
             this.btnAsyncAndReport = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.prgbr = new System.Windows.Forms.ProgressBar();
-            this.totalTime = new System.Windows.Forms.TextBox();
+            this.TotalTime = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnNormalExecute
             // 
-            this.btnNormalExecute.Location = new System.Drawing.Point(12, 12);
+            this.btnNormalExecute.Location = new System.Drawing.Point(26, 11);
             this.btnNormalExecute.Name = "btnNormalExecute";
             this.btnNormalExecute.Size = new System.Drawing.Size(148, 64);
             this.btnNormalExecute.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btnAsyncExecute
             // 
-            this.btnAsyncExecute.Location = new System.Drawing.Point(166, 12);
+            this.btnAsyncExecute.Location = new System.Drawing.Point(180, 11);
             this.btnAsyncExecute.Name = "btnAsyncExecute";
             this.btnAsyncExecute.Size = new System.Drawing.Size(148, 64);
             this.btnAsyncExecute.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnParallelAsyncExecute
             // 
-            this.btnParallelAsyncExecute.Location = new System.Drawing.Point(320, 12);
+            this.btnParallelAsyncExecute.Location = new System.Drawing.Point(334, 11);
             this.btnParallelAsyncExecute.Name = "btnParallelAsyncExecute";
             this.btnParallelAsyncExecute.Size = new System.Drawing.Size(148, 64);
             this.btnParallelAsyncExecute.TabIndex = 2;
@@ -67,15 +67,15 @@
             // 
             // txtProgress
             // 
-            this.txtProgress.Location = new System.Drawing.Point(12, 149);
+            this.txtProgress.Location = new System.Drawing.Point(26, 148);
             this.txtProgress.Multiline = true;
             this.txtProgress.Name = "txtProgress";
-            this.txtProgress.Size = new System.Drawing.Size(610, 368);
+            this.txtProgress.Size = new System.Drawing.Size(776, 314);
             this.txtProgress.TabIndex = 3;
             // 
             // btnAsyncAndReport
             // 
-            this.btnAsyncAndReport.Location = new System.Drawing.Point(474, 12);
+            this.btnAsyncAndReport.Location = new System.Drawing.Point(488, 11);
             this.btnAsyncAndReport.Name = "btnAsyncAndReport";
             this.btnAsyncAndReport.Size = new System.Drawing.Size(148, 64);
             this.btnAsyncAndReport.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(628, 12);
+            this.button2.Location = new System.Drawing.Point(642, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 64);
             this.button2.TabIndex = 5;
@@ -93,25 +93,25 @@
             // 
             // prgbr
             // 
-            this.prgbr.Location = new System.Drawing.Point(12, 107);
+            this.prgbr.Location = new System.Drawing.Point(26, 106);
             this.prgbr.Name = "prgbr";
             this.prgbr.Size = new System.Drawing.Size(776, 36);
             this.prgbr.TabIndex = 6;
             // 
-            // totalTime
+            // TotalTime
             // 
-            this.totalTime.Location = new System.Drawing.Point(696, 241);
-            this.totalTime.Multiline = true;
-            this.totalTime.Name = "totalTime";
-            this.totalTime.Size = new System.Drawing.Size(92, 110);
-            this.totalTime.TabIndex = 7;
+            this.TotalTime.Location = new System.Drawing.Point(26, 478);
+            this.TotalTime.Multiline = true;
+            this.TotalTime.Name = "TotalTime";
+            this.TotalTime.Size = new System.Drawing.Size(776, 48);
+            this.TotalTime.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 529);
-            this.Controls.Add(this.totalTime);
+            this.Controls.Add(this.TotalTime);
             this.Controls.Add(this.prgbr);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAsyncAndReport);
@@ -135,7 +135,7 @@
         private System.Windows.Forms.Button btnAsyncAndReport;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ProgressBar prgbr;
-        private System.Windows.Forms.TextBox totalTime;
+        private System.Windows.Forms.TextBox TotalTime;
     }
 }
 
