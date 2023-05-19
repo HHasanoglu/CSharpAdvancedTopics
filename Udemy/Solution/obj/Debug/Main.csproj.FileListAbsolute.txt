@@ -1,0 +1,10 @@
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\bin\Debug\Solution.exe.config
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\bin\Debug\Solution.exe
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\bin\Debug\Solution.pdb
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\bin\Debug\Topics.dll
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\bin\Debug\Topics.pdb
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\obj\Debug\Main.csproj.CopyComplete
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\obj\Debug\Solution.exe
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Udemy\Solution\obj\Debug\Solution.pdb

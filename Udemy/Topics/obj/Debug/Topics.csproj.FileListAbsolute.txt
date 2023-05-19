@@ -1,0 +1,6 @@
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\bin\Debug\Topics.dll
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\bin\Debug\Topics.pdb
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\obj\Debug\Topics.csproj.AssemblyReference.cache
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\obj\Debug\Topics.csproj.CoreCompileInputs.cache
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\obj\Debug\Topics.dll
+D:\Hamid1\Hassanzada\Personal\Projects\C# Advanced Topics\Topics\obj\Debug\Topics.pdb
